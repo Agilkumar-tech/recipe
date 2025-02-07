@@ -1,0 +1,30 @@
+.cart-head{
+display: flex;
+padding-left: 20px;
+padding-top: 20px;
+background-color: rgb(206, 206, 248);
+justify-content: center;
+}
+.title{
+    
+}
+.button-back{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+.box-content{
+    display: flex;
+    width: 70%;
+    background-color: rgb(177, 177, 195);
+    margin-left: 15%;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+body{
+    background-color: #fff;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}

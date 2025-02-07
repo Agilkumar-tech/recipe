@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Applite from './Applite';
+import { Route,Routes } from 'react-router-dom';
+import Storage from './Component/Storage';
+// import Productdetails from './Component/Productdetails';
+// import Popupbox from './Component/Popupbox';
+import Order from './order/Order';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Routes>
+     <Route path="/" element={<Applite/>}/> 
+      <Route path='/src/Component/Storage' element={<Storage/>}/>
+      <Route path='/Order' element={<Order/>}/>
+     </Routes>
+     
     </div>
   );
 }
